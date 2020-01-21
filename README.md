@@ -1,4 +1,6 @@
-# MyFirstApp
+# Angular 8 App for Data Directives
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 

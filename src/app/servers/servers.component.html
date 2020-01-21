@@ -1,0 +1,6 @@
+<button
+  class="btn btn-primary"
+  (click)="toggleMessage()">Display Details</button>
+
+<p *ngIf="serverDisplay">Server name is Test</p>
+<app-server *ngFor="let server of clickButton"></app-server>

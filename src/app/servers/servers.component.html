@@ -3,4 +3,9 @@
   (click)="toggleMessage()">Display Details</button>
 
 <p *ngIf="serverDisplay">Server name is Test</p>
-<app-server *ngFor="let server of clickButton"></app-server>
+<div
+  *ngFor="let serverNo of clickButton"
+  [ngStyle]="{backgroundColor: serverNo >= 5 ? 'blue' : 'transparent'}"
+  [ngClass]="{displayMess: serverNo >= 5}">
+  Click number is {{ serverNo }}
+</div>

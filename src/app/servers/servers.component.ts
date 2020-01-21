@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  serverName = 'Testserver';
   serverDisplay = false;
+  clickNumber = 1;
   clickButton = [];
 
   constructor() {
@@ -18,6 +18,6 @@ export class ServersComponent implements OnInit {
 
   toggleMessage() {
     this.serverDisplay = ! this.serverDisplay;
-    this.clickButton.push(this.serverName);
+    this.clickButton.push(this.clickNumber++);
   }
 }
